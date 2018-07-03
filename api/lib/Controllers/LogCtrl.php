@@ -6,7 +6,7 @@ use \Psr\Http\Message\ResponseInterface		 as Response;
 /**
  *
  */
-class LogCtrl extends Controller {
+class LogsCtrl extends Controller {
 	public function getLogsByDates (Request $request, Response $response):Response {
 		$params = $request->getQueryParams();
 

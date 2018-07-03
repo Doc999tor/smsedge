@@ -7,4 +7,4 @@ $app->add(new Tuupola\Middleware\CorsMiddleware);
 
 $app->get('/users', 'UsersCtrl:getAll');
 $app->get('/countries', 'CountriesCtrl:getAll');
-$app->get('/logs', 'LogCtrl:getLogsByDates');
+$app->get('/logs', 'LogsCtrl:getLogsByDates');

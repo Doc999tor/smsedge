@@ -37,12 +37,15 @@ class App extends Component {
 				logs: data[2],
 			}
 			this.setState(Object.assign(this.state, state))
-			console.log(this.state)
 		})
 	}
-
+	/**
+	 * reloads a log list with updated search criteria
+	 * @param  {key}    usr_id|cnt_id|start|end
+	 * @param  {value}  values
+	 * @return {void}
+	 */
 	updateLogs = (key, value) => {
-		console.log(key, value);
 		Object.assign(this.logRequestParams, {[key]: value});
 		fetch('http://localhost:9000/logs' + getLogRequestQueryString(this.logRequestParams))
 		.then(response => response.json())

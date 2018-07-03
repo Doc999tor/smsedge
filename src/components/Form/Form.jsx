@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './Form.css';
 
 export default class Form extends Component {
+	/**
+	 * react on every change of 4 inputs
+	 * @param  {event}   user input change event
+	 * @return {void}
+	 */
 	updateLogs = e => {
 		this.props.updateLogs(e.target.name, e.target.value);
 	}

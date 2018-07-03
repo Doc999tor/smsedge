@@ -2,12 +2,21 @@
 namespace Lib\Models;
 
 /**
- *
+ * Log model
  */
 class Log {
 
 	function __construct() {}
 
+	/**
+	 * Returns array of \strClass log rows
+	 * @param  \PDO
+	 * @param  \DateTime  required
+	 * @param  \DateTime  required
+	 * @param  int|null   optional
+	 * @param  int|null   optional
+	 * @return array|null
+	 */
 	public static function getLogsByDates (
 		\PDO $db,
 		\DateTime $start,

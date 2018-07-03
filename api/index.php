@@ -25,7 +25,7 @@ $container['db'] = function ($c) {
 		throw $e;
 	}
 };
-$container['LogCtrl'] = function () use ($container) {
+$container['LogsCtrl'] = function () use ($container) {
 	return new \Lib\Controllers\LogCtrl($container);
 };
 $container['UsersCtrl'] = function () use ($container) {

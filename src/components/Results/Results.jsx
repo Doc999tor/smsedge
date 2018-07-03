@@ -3,9 +3,7 @@ import './Results.css';
 import Result from '../Result/Result'
 
 export default class Results extends Component {
-
 	render() {
-		console.log(this.props.logs)
 		return this.props.logs && this.props.logs.length ? (
 			<table className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 				<caption>Logs for selected period</caption>
