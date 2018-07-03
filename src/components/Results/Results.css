@@ -1,0 +1,19 @@
+table, th, td {
+  border: 1px solid currentColor;
+}
+table {
+	margin-top: 2rem;
+	--columns: 3;
+}
+table caption {
+  caption-side: top;
+  text-align: center;
+  font-weight: bold;
+  color: currentColor;
+  text-decoration: underline;
+}
+th {text-align: center;}
+td, th {
+	padding: .5rem;
+	width: calc(100% / var(--columns));
+}

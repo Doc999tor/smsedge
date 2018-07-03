@@ -28,5 +28,11 @@ $container['db'] = function ($c) {
 $container['LogCtrl'] = function () use ($container) {
 	return new \Lib\Controllers\LogCtrl($container);
 };
+$container['UsersCtrl'] = function () use ($container) {
+	return new \Lib\Controllers\UsersCtrl($container);
+};
+$container['CountriesCtrl'] = function () use ($container) {
+	return new \Lib\Controllers\CountriesCtrl($container);
+};
 require_once 'routes.php';
 $app->run();
